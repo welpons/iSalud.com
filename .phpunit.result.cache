@@ -1,0 +1,1 @@
+C:37:"PHPUnit\Runner\DefaultTestResultCache":330:{a:2:{s:7:"defects";a:2:{s:31:"ConverterFactoryTest::testHello";i:5;s:84:"Tests\App\Reporting\Infrastructure\Service\Converter\ConverterFactoryTest::testHello";i:5;}s:5:"times";a:2:{s:31:"ConverterFactoryTest::testHello";d:0.009;s:84:"Tests\App\Reporting\Infrastructure\Service\Converter\ConverterFactoryTest::testHello";d:0.006;}}}
