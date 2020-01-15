@@ -18,8 +18,20 @@ services:
     public: true
     tags: [console.command]
 
+  App\Reporting\Infrastructure\:
+    resource: '../src/Reporting/Infrastructure'
+    autowire: true
+    public: true
+    tags: [console.command]
+
   App\Reporting\Infrastructure\Service\Source\CompanyListService:
     arguments: ['%companies%']
 
+  App\Reporting\Infrastructure\Service\Source\SourceFactoryInterface: '@App\Reporting\Infrastructure\Service\Source\SourceFactory'
+
   App\Reporting\Command\ListCompaniesCloseToRenewMonthAheadService:
-    arguments: ['@App\Reporting\Infrastructure\Service\Source\SourceFactory']
+    arguments: ['@App\Reporting\Infrastructure\Service\Source\SourceFactoryInterface']
+
+  App\Reporting\Infrastructure\Service\Converter:
+    arguments: ['../logsfile']
+

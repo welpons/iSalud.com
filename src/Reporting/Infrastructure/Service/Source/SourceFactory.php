@@ -7,7 +7,9 @@ use InvalidArgumentException;
 
 class SourceFactory implements SourceFactoryInterface
 {
-    public function instantiate(string $companyName)
+
+
+    public function instantiate(string $companyName) : SourceInterface
     {
         $sourceClassName = "App\Reporting\Infrastructure\Service\Source\{$companyName}Source";
 

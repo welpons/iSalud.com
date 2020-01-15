@@ -6,5 +6,5 @@ namespace App\Reporting\Infrastructure\Service\Converter;
 
 interface DataConverterInterface
 {
-    public function generateFile(string $fileName) : void;
+    public function generateFile(array $list) : void;
 }

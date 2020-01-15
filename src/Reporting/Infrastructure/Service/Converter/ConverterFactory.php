@@ -9,13 +9,13 @@ class ConverterFactory
 {
     private $filePath;
 
-    public function __construct(string $filePath)
+    public function __construct(?string $filePath = null)
     {
         // @TODO verify exists
         $this->filePath = $filePath;
     }
 
-    public function getConverter(string $format) : DataConverter
+    public function getConverter(string $format) : DataConverterInterface
     {
         $format = strtolower($format);
 

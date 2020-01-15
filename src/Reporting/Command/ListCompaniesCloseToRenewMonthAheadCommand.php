@@ -12,10 +12,13 @@ use App\Reporting\Infrastructure\Service\Source\CompanyListService;
 
 class ListCompaniesCloseToRenewMonthAheadCommand extends Command
 {
-    public function __construct(CompanyListService $companyListService, string $name = null)
-    {
-        parent::__construct($name);
-    }
+    private $istCompaniesCloseToRenewMonthAheadService;
+
+//    public function __construct(ListCompaniesCloseToRenewMonthAheadService $listCompaniesCloseToRenewMonthAheadService)
+//    {
+//        parent::__construct();
+//        $this->istCompaniesCloseToRenewMonthAheadService = $listCompaniesCloseToRenewMonthAheadService;
+//    }
 
     protected function configure()
     {
@@ -26,13 +29,7 @@ class ListCompaniesCloseToRenewMonthAheadCommand extends Command
     }
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $source = new InternSource();
-
-
-
-
-
-
+        //$clients = $this->istCompaniesCloseToRenewMonthAheadService->execute();
 
 
 
