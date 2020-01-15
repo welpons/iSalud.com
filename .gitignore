@@ -52,4 +52,4 @@
 /.web-server-pid
 
 .DS_Store
-.idea
+.idea/
